@@ -15,9 +15,10 @@ def homepage():
     return render_template('index.html')
 
 
-@app.route('/hello/')
-@app.route('/hello/<user>')
+@app.route('/hello')
 def hello(user='default'):
+    user = request.cookies.get('user', '')
+    pawd = request.cookies.get('pawd', '')
     return render_template('hello.html', user=user)
 
 
