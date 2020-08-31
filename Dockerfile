@@ -3,8 +3,6 @@ FROM debian@sha256:11253793361a12861562d1d7b15b8b7e25ac30dd631e3d206ed1ca969bf97
 
 LABEL maintainer "adn.lancer@gmail.com"
 
-USER root
-
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN echo "deb http://ftp.debian.org/debian buster main non-free contrib" >> /etc/apt/sources.list && \
