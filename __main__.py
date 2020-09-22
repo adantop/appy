@@ -1,6 +1,6 @@
 #!/bin/env python
 
-from flask import *
+from flask import request, Flask, render_template, make_response, redirect
 
 app = Flask(__name__)
 
